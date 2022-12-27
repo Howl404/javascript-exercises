@@ -1,9 +1,12 @@
-const removeFromArray = function (arr, remove) {
-  const index = arr.indexOf(remove);
-  arr.splice(index, 1);
+const removeFromArray = function (arr, num1, num2) {
+  const num1Index = arr.indexOf(num1);
+  arr.splice(num1Index, 1);
+  if (num2 > 1) {
+    const num2Index = arr.indexOf(num2);
+    arr.splice(num2Index, 1);
+  }
   return arr;
 };
 
-// [1, 2, 3, 4] - 3
 // Do not edit below this line
 module.exports = removeFromArray;
