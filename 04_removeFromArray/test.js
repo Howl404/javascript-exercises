@@ -25,11 +25,5 @@ const removeFromArray = function (arr, num1, num2) {
     return arr;
   }
 };
-// 1. Remove 1 element
-// 2. Remove few elements
-// 3. Doesn't do anything with invalid argument
-// const num1Index = arr.indexOf(num1);
-// arr.splice(num1Index, 1);
 
-// Do not edit below this line
-module.exports = removeFromArray;
+console.log(removeFromArray([1, 2, 3], "1", 3));
